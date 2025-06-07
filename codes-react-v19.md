@@ -36,7 +36,7 @@ import Loading from "./components/Loading"
 const App = () => {
     const getWeather = (_prevState: any, formData: FormData) => {
         const city = formData.get("city")
-        return fetch(`https://api.weatherapi.com/v1/current.json?key=b613407f48da4f6d8be11256212102&q=${city}&aqi=no`)
+        return fetch(`https://api.weatherapi.com/v1/current.json?key=xxxyyyzzz&q=${city}&aqi=no`)
                 .then(res => res.json())  
                 .then(data => data)        // このラインは省略可
     }
